@@ -1,22 +1,37 @@
-/* @flow weak */
-
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-} from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 
-const Button = ({}) => (
-  <View style={styles.container}>
-    <Text>I'm Button</Text>
-  </View>
-);
+const Button = () => {
+  const { buttonStyle, textStyle } = styles;
+
+  return (
+    <TouchableOpacity style={buttonStyle}>
+      <Text style={textStyle}>
+        I'm Button
+      </Text>
+    </TouchableOpacity>
+  );
+};
+
+const styles = {
+  textStyle: {
+    color: '#007aaf',
+    alignSelf: 'center',
+    fontSize: 16,
+    fontWeight: '600',
+    paddingTop: 10,
+    paddingBottom: 10
+  },
+  buttonStyle: {
+    flex: 1,
+    alignSelf: 'stretch',
+    backgroundColor: '#fff',
+    borderColor: '#007aaf',
+    borderWidth: 1,
+    borderRadius: 5,
+    marginLeft: 5,
+    marginRight: 5
+  }
+};
 
 export default Button;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
