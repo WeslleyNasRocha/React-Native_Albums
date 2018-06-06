@@ -3,5 +3,4 @@
 
 A sample app, made in course with react-native consuming an api and organizing its results in a list
 
-
--- coming screen --
+<img src="https://thumbs.gfycat.com/WhoppingTintedLadybird-size_restricted.gif" width="200">
